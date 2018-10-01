@@ -1,0 +1,9 @@
+import random
+i = int
+number = int
+j = int
+def total(numbers, target):
+    for i, number in enumerate(numbers):
+        for j in range(i+1, len(numbers), 1):
+            if (number + numbers[j]) == target:
+                return "The 2 numbers required for target are at indexes {} & {}".format(i, j)
